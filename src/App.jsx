@@ -1,4 +1,4 @@
-import SnapFlirt from './pages/uploadPage';
+import SnapFlirt from './pages/snapFlirt';
 
 export default function App() {
   return <SnapFlirt />;
