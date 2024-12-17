@@ -1,14 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ImageUploader from '../components/imageUploader';
-import useFlirtyComment from '../hooks/useFlirtyLine';
+import useFlirtyLine from '../hooks/useFlirtyLine';
 
 export default function SnapFlirt() {
   const [image, setImage] = useState(null);
-  const { flirtyLine, loading, error, sendImageToBackend } = useFlirtyComment();
+  const { flirtyLine, loading, error, sendImageToBackend, clearFlirtyLine } =
+    useFlirtyLine();
 
   const handleGenerateFlirt = () => {
     sendImageToBackend(image);
   };
+
+  useEffect(() => {
+    if (!image) {
+      clearFlirtyLine();
+    }
+  }, [image, clearFlirtyLine]);
 
   return (
     <div className='min-h-screen bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 flex items-center justify-center p-4'>

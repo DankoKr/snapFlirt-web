@@ -36,5 +36,7 @@ export default function useFlirtyLine() {
     }
   };
 
-  return { flirtyLine, loading, error, sendImageToBackend };
+  const clearFlirtyLine = () => setFlirtyLine(null);
+
+  return { flirtyLine, loading, error, sendImageToBackend, clearFlirtyLine };
 }
