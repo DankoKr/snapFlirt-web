@@ -21,7 +21,10 @@ export default function SnapFlirt() {
     <div className='min-h-screen bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 flex items-center justify-center p-4'>
       <div className='bg-white rounded-xl shadow-2xl p-8 max-w-md w-full space-y-6'>
         <h1 className='text-3xl font-bold text-center text-gray-800'>
-          SnapFlirt 📸💕
+          <span className='italic bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-indigo-500 mr-2'>
+            SnapFlirt
+          </span>
+          <span className='text-pink-500'>📸💕</span>
         </h1>
 
         <ImageUploader image={image} setImage={setImage} />
@@ -33,7 +36,11 @@ export default function SnapFlirt() {
           }`}
           disabled={!image || loading}
         >
-          {loading ? 'Generating Flirty Line...' : 'Generate Flirty Line'}
+          {loading
+            ? 'Generating Flirty Line...'
+            : flirtyLine
+            ? 'Generate New Flirty Line'
+            : 'Generate Flirty Line'}
         </button>
 
         {error && (
