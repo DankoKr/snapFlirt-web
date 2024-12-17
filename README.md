@@ -1,9 +1,53 @@
-# React + Vite
+# SnapFlirt website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Currently, two official plugins are available:
+Link to live version: (to be added...)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# snapFlirt-web
+## 🎉 Features
+
+- **React** - A JavaScript library for building user interfaces.
+- **Vite** - A fast, opinionated frontend build tool.
+
+## ⚙️ Prerequisites
+
+Make sure you have the following installed on your development machine:
+
+- Node.js (version 16 or above)
+- npm (package manager)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/DankoKr/snapFlirt-web.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd snapFlirt-web
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## 📜 Available Scripts
+
+- npm run dev - Starts the development server.
+- npm run build - Builds the production-ready code.
+- npm preview - Starts the Vite development server in preview mode.
+
+## Deployment
+
+The 'main' branch is used as the production version deployed on Vercel.
