@@ -36,7 +36,7 @@ export default function SnapFlirt() {
         )}
 
         {flirtyLine && (
-          <div className='bg-gray-100 rounded-lg p-4 mt-4 text-center animate-fade-in'>
+          <div className='bg-gray-100 rounded-lg p-4 mt-4 text-center animate-fade-scale'>
             <p className='text-lg font-medium text-gray-800'>{flirtyLine}</p>
           </div>
         )}
