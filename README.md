@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Link to live version: (to be added...)
+Link to live version: https://snap-flirt-web.vercel.app/
 
 ## 🎉 Features
 
