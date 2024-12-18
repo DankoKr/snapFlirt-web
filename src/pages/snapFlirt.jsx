@@ -54,6 +54,11 @@ export default function SnapFlirt() {
             <p className='text-lg font-medium text-gray-800'>{flirtyLine}</p>
           </div>
         )}
+
+        <p className='text-xs text-gray-500 text-center mt-2'>
+          Please note: It may take longer for the first flirt to generate due to
+          server traffic inactivity (50 sec).
+        </p>
       </div>
     </div>
   );

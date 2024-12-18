@@ -17,17 +17,22 @@ export default function useFlirtyLine() {
       const blob = await fetch(image).then((res) => res.blob());
       formData.append('file', blob, 'uploaded-image.jpg');
 
-      const response = await fetch('http://127.0.0.1:8000/generate-flirt/', {
-        method: 'POST',
-        body: formData,
-      });
+      const response = await fetch(
+        'https://snapflirt.onrender.com/generate-flirt/',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      );
 
       if (!response.ok) {
         throw new Error('Failed to fetch flirty line.');
       }
 
       const data = await response.json();
-      setFlirtyLine(data.flirty_comment || 'No flirty line generated.');
+      setFlirtyLine(
+        data.flirty_comment || 'Something went wrong! Please try again later!'
+      );
     } catch (err) {
       console.error('Error fetching flirty line:', err);
       setError('Something went wrong. Please try again.');
